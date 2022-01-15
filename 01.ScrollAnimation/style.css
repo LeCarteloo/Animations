@@ -43,6 +43,7 @@ body {
     font-weight: 200;
     text-transform: uppercase;
     animation: bounce 1s infinite;
+    color: var(--primary-color);
 }
 
 @keyframes bounce {

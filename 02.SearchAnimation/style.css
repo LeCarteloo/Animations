@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    --primary-color: #D0FC44FF; /* #D0FC44FF */
+    --secondary-color: #1D212B; /* #121212 */
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+.title-section {
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    color: white;
+}
+
+.title-section h1 {
+    font-size: 3em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.title-section h2 {
+    font-size: 3em;
+    font-weight: 200;
+}
+
+.search-box {
+    width: 50px;
+    height: 50px;
+
+    margin-top: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 100px;
+    background-color: white;
+    transition: .5s;
+}
+
+.search-box:hover, .search-box:focus {
+    width: 300px;
+    border-radius: 30px;
+}
+
+.search-input {
+    height: 100%;
+    width: 100%;
+
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    opacity: 0;
+    outline: none;
+    margin: 10px;
+    transition: .5s;
+}
+
+.search-box:hover .search-input {
+    opacity: 1;
+}
+
+.search-box img {
+    width: 30px;
+    height: 30px;
+
+    position: relative;
+    left: -10px;
+}
+
+.search-box:hover img {
+    cursor: pointer;
+}
+
+.press-info {
+    font-size: 1em;
+    font-weight: 200;
+    text-transform: uppercase;
+    animation: bounce 1s infinite;
+    color: var(--primary-color);
+}
+
+@keyframes bounce {
+    0% { transform: translateX(0px) }
+    50% { transform: translateX(5px) }
+    100% { transform: translateX(0px) }
+}
