@@ -126,7 +126,7 @@ body {
 
 /* Second animation */
 
-.second-section {
+.second-section, .third-section {
     width: 100vw;
     height: 100vh;
 }
@@ -138,6 +138,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     overflow: hidden;
+    margin: 20px;
 }
 
 .left-box {
@@ -151,7 +152,11 @@ body {
     transition: .5s;
     margin-left: 5%;
 }
-
+.left-box h1 {
+    color: var(--primary-color);
+    font-size: 2em;
+    text-transform: uppercase;
+}
 .right-box {
     transform: translateX(500px);
     opacity: 0;
@@ -172,4 +177,34 @@ body {
     transform: translateX(0px);
     opacity: 1;
     transition: 1s;
+}
+
+/* Third animation */
+.third-anim {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    transform: scale(.5);
+    opacity: 0;
+}
+.third-anim.active {
+    transform: scale(1);
+    opacity: 1;
+    transition: 1s;
+}
+.third-anim h1 {
+    color: white;
+}
+.text-box {
+    width: 50%;
+    text-align: justify;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+}
+.text-box p {
+    margin: 20px;
 }

@@ -3,11 +3,11 @@ window.onload = () => {
 
         // Cards animation
         let cards = document.querySelectorAll('.cards-info');
+        const showPoint = 150;
         
         const windowHeight = window.innerHeight;
         for (let i = 0; i < cards.length; i++) {
             const showTop = cards[i].getBoundingClientRect().top;
-            const showPoint = 150;
 
             if(showTop < windowHeight - showPoint) {
                 cards[i].classList.add('active');
@@ -24,7 +24,6 @@ window.onload = () => {
 
         const showLeft = leftBox.getBoundingClientRect().top;
 
-        const showPoint = 150;
 
         if(showLeft < windowHeight - showPoint) {
             leftBox.classList.add('active');
@@ -34,5 +33,17 @@ window.onload = () => {
             rightBox.classList.remove('active');
 
         }
+
+        // Third animation 
+        let thirdAnim = document.querySelector('.third-anim');
+
+        const showTop = thirdAnim.getBoundingClientRect().top;
+
+        if(showTop < windowHeight - showPoint) {
+            thirdAnim.classList.add('active');
+        } else {
+            thirdAnim.classList.remove('active');
+        }
+
     });
 }
