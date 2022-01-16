@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    --primary-color: #D0FC44FF; /* #D0FC44FF */
+    --secondary-color: #1D212B; /* #121212 */
+}
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent;
+}
+body {
+    background-color: var(--secondary-color);
+}
+
+
+/* Title */
+.title-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url('bg1.png');
+    color: white;
+}
+
+.title-box {
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-section h1 {
+    font-size: 3em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.title-section h2 {
+    font-size: 3em;
+    font-weight: 200;
+}
+
+.scroll-info {
+    font-size: 1em;
+    font-weight: 200;
+    text-transform: uppercase;
+    animation: bounce 1s infinite;
+    color: var(--primary-color);
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0px) }
+    50% { transform: translateY(5px) }
+    100% { transform: translateY(0px) }
+}
+
+.second-section {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--secondary-color);
+}
+
+.center-women {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.right-rock {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.shadow {
+    height: 210px;
+    width: 100%;
+
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: 3;
+
+    background: linear-gradient(transparent, var(--secondary-color));
+}
+
+.third-section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.middle-box {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-box h1:nth-child(even) {
+    color: var(--primary-color)
+}
+
+.middle-box h1{
+    font-size: 3em;
+    color: white;
+}
+
+.middle-box ul {
+    list-style: none;
+}
+
+.space {
+    width: 50px;
+}
