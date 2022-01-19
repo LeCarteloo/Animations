@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    --primary-color: #D0FC44FF; /* #D0FC44FF */
+    --secondary-color: #1D212B; /* #121212 */
+}
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent;
+}
+body {
+    background-color: var(--secondary-color);
+}
+
+.title-section {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    background-image: url('bg1.png');
+    color: white;
+    z-index: 9;
+}
+
+.title-box {
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-section h1 {
+    font-size: 3em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.title-section h2 {
+    font-size: 3em;
+    font-weight: 200;
+}
+
+.scroll-info {
+    font-size: 1em;
+    font-weight: 200;
+    text-transform: uppercase;
+    animation: bounce 1.5s infinite;
+    color: var(--primary-color);
+}
+
+@keyframes bounce {
+    0% { transform: translate(0px, 0px) }
+    25% { transform: translate(5px, 5px) }
+    50% { transform: translate(0px, 0px) }
+    75% { transform: translate(-5px, 5px) }
+    100% { transform: translate(0px, 0px) }
+}
+
+/* Fourth circle animation */
+.background, .circles {
+    width: 100%;
+    height: 100%;
+}
+.circle {
+    position: absolute;
+
+    border-radius: 100%;
+}
+
+.first {
+    width: 400px;
+    height: 400px;
+
+    right: 180px;
+    top: 200px;
+    
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 4;
+}
+
+.second {
+    width: 500px;
+    height: 500px;
+
+    right: 130px;
+    top: 150px;
+
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 3;
+}
+
+.third {
+    width: 600px;
+    height: 600px;
+
+    right: 90px;
+    top: 100px;
+
+    background-color: rgba(255, 255, 255, 0.274);
+    z-index: 2;
+}
+
+.fourth {
+    width: 700px;
+    height: 700px;
+
+    right: 40px;
+    top: 50px;
+
+    background-color: rgba(255, 255, 255, 0.096);
+    z-index: 1;
+}
+.cloud-one, .cloud-two {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(2%) saturate(5292%) hue-rotate(1deg) brightness(88%) contrast(86%);
+}
+.cloud-one {
+    position: absolute;
+    
+    top: 400px;
+    right: 0px;
+    z-index: 5;
+
+}
+.cloud-two {
+    position: absolute;
+    
+    top: 100px;
+    right: 400px;
+    z-index: 6;
+}
+
+.clouds {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.full-page {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    z-index: 10;
+}
+
+.title {
+    position: absolute;
+    z-index: 5;
+
+    top: 350px;
+    right: 300px;
+
+    text-shadow: 5px 5px 5px var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 60px;
+}
+
+@media (max-width: 700px) {
+    .background {
+        top: 150px;
+    }
+    .first {
+        width: 200px;
+        height: 200px;
+    
+        right: 100px;
+    }
+    
+    .second {
+        width: 300px;
+        height: 300px;
+    
+        right: 50px;
+    }
+    
+    .third {
+        width: 400px;
+        height: 400px;
+    
+        right: 10px;
+    }
+    
+    .fourth {
+        width: 500px;
+        height: 500px;
+    
+        right: -40px;
+    }
+    .cloud-one {
+        width: 300px;
+        top: 300px;
+        right: 0px;
+    }
+    .cloud-two {
+        width: 300px;
+        top: 100px;
+        right: 150px;
+    }
+    
+    .title {
+        top: 265px;
+        right: 150px;
+        font-size: 40px;
+    }
+}

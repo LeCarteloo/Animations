@@ -1,6 +1,6 @@
 window.onload = () => {
-    const searchBox = document.querySelector('.search-box');
+    const searchInput = document.querySelector('.search-input');
 
-    searchBox.addEventListener('click', () => {
+    searchInput.addEventListener('focus', () => {
     });
 };

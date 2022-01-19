@@ -56,6 +56,11 @@ body {
     border-radius: 30px;
 }
 
+.search-box:hover, .search-box:focus {
+    width: 300px;
+    border-radius: 30px;
+}
+
 .search-input {
     height: 100%;
     width: 100%;
@@ -68,6 +73,7 @@ body {
     margin: 10px;
     transition: .5s;
 }
+
 
 .search-box:hover .search-input {
     opacity: 1;
