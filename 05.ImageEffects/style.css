@@ -63,23 +63,22 @@ body {
 }
 
 /* First section */
-.first-section, .second-section {
+.sanfrancisco-section, .newyork-section {
     width: 100vw;
     height: 100vh;
     position: relative;
 }
 
 .image-box {
-    width: 100%;
-    height: 100%;
-    
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.image-box .image {
+.image {
     width: 800px;
+
+    margin-top: 100px;
     border: 1px solid var(--primary-color);
     z-index: 1;
 }
@@ -120,26 +119,19 @@ body {
     font-size: 200px;
     left: -60px;
     letter-spacing: 30px;
-    bottom: 100px;
-
 }
 
 .second-left {
-    bottom: 160px;
+    bottom: 100px;
     left: 130px;
 }
 
-.first-title {
+.animation-info {
     margin-top: 50px;
     font-size: 3em;
     font-weight: 800;
     text-transform: uppercase;
     color: white;
-}
-
-.image{ 
-    /* transform: perspective(1000px) rotateX(-5deg) rotateY(-10deg); */
-    margin-top: 100px;
 }
 
 .hover {
@@ -203,3 +195,67 @@ body {
     bottom: 160px;
     right: 130px;
 }
+
+
+.statue-box {
+    width: 800px;
+    height: 450px;
+
+    margin-top: 100px;
+    z-index: 1;
+    border: 1px solid var(--primary-color);
+    background-size: cover;
+    /* Important */
+	overflow: hidden;
+}
+
+.statue {
+    margin: 0;
+}
+
+
+.statue-box .statue {
+    transform: scale(1);
+	transition: .5s;
+}
+
+.statue-box:hover img {
+    transform: scale(1.5);
+}
+
+.stripe-left {
+    width: 100px;
+    height: 95vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    overflow: hidden;
+
+    margin: 20px;
+}
+
+.list {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+    transform: rotate(180deg);
+    background-color: var(--primary-color);
+}
+.list li {
+    position: absolute;
+
+    writing-mode: vertical-lr;
+
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--secondary-color);
+}
+
