@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.swiper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide:nth-child(even) {
+  background-color: magenta;
+}
+.swiper-slide:nth-child(odd) {
+  background-color: red;
+}
